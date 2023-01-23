@@ -2,7 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Bobbysoft.Extensions.DependencyInjection;
 
-internal static class ServiceDecorator
+public static class ServiceDecorator
 {
     public static void Decorate<T>(this IServiceCollection services, Func<T, IServiceProvider, T> implementationFactory)
     {
