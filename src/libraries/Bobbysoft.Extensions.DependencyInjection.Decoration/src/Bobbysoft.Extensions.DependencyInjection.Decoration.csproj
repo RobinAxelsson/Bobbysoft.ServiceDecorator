@@ -12,7 +12,7 @@
       decorate an already registered service implementation.</Summery>
     <NeutralLanguage>en-US</NeutralLanguage>
     <Title>Bobbysoft.Extensions.DependencyInjection.Decoration</Title>
-    <PackageTags>decorator;wrapper;design pattern;microsoft;service provider;servicecollection;inversion of conterol;dependency injection;IOC</PackageTags>
+    <PackageTags>decorator;decoration;decorate;adapter;wrapper;design pattern;microsoft;service provider;servicecollection;inversion of conterol;dependency injection;IOC;container</PackageTags>
     <PackageIcon>package-icon.png</PackageIcon>
     <PackageProjectUrl>https://github.com/RobinAxelsson/Bobbysoft</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
