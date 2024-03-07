@@ -34,4 +34,4 @@ $slnpath = ".\src\libraries\Bobbysoft.Extensions.DependencyInjection.Decoration\
 exec { & dotnet test $slnpath -c Release --results-directory $artifacts -l trx --verbosity=normal -f $Framework }
 
 $projectpath = ".\src\libraries\Bobbysoft.Extensions.DependencyInjection.Decoration\src\Bobbysoft.Extensions.DependencyInjection.Decoration.csproj"
-exec { & dotnet pack $projectpath -c Release -o $artifacts --no-build }
+exec { & dotnet pack $projectpath -c Release -o $artifacts --no-build --framework $Framework } "Error executing dotnet pack."
