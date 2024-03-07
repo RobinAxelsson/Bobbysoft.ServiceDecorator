@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <IsPackable>true</IsPackable>
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
     <Authors>RobinSalihAxelsson</Authors>
     <Description>Extends Microsoft.Extensions.DependencyInjection.IServiceCollection to easy
       decorate an already registered service implementation.</Description>
@@ -19,11 +19,9 @@
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <RootNamespace>Bobbysoft.Extensions.DependencyInjection</RootNamespace>
     <RepositoryUrl>https://github.com/RobinAxelsson/Bobbysoft</RepositoryUrl>
-    <Nullable>enable</Nullable>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryType>git</RepositoryType>
     <IncludeSymbols>False</IncludeSymbols>
-    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
