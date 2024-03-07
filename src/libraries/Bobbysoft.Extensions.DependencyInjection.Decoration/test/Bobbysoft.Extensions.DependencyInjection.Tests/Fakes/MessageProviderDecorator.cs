@@ -1,16 +1,17 @@
-﻿namespace Bobbysoft.Extensions.DependencyInjection.Tests.Fakes;
-
-internal class MessageProviderDecorator : MessageProviderBase
+﻿namespace Bobbysoft.Extensions.DependencyInjection.Tests.Fakes
 {
-    private readonly MessageProviderBase _provider;
-
-    public MessageProviderDecorator(MessageProviderBase provider)
+    internal class MessageProviderDecorator : MessageProviderBase
     {
-        _provider = provider;
-    }
+        private readonly MessageProviderBase _provider;
 
-    public override string GetMessage()
-    {
-        return "Decorated: " + _provider.GetMessage();
+        public MessageProviderDecorator(MessageProviderBase provider)
+        {
+            _provider = provider;
+        }
+
+        public override string GetMessage()
+        {
+            return "Decorated: " + _provider.GetMessage();
+        }
     }
 }

@@ -1,6 +1,7 @@
-﻿namespace Bobbysoft.Extensions.DependencyInjection.Tests.Fakes;
-
-internal class ExtraText
+﻿namespace Bobbysoft.Extensions.DependencyInjection.Tests.Fakes
 {
-    public string Value { get; } = "Extra injected: ";
+    internal class ExtraText
+    {
+        public string Value { get; } = "Extra injected: ";
+    }
 }

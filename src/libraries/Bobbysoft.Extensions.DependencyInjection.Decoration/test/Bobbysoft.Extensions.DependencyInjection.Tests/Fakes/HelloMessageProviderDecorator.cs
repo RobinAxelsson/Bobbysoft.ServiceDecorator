@@ -1,16 +1,17 @@
-﻿namespace Bobbysoft.Extensions.DependencyInjection.Tests.Fakes;
-
-internal class HelloMessageProviderDecorator : HelloMessageProvider
+﻿namespace Bobbysoft.Extensions.DependencyInjection.Tests.Fakes
 {
-    private readonly HelloMessageProvider _helloMessageProvider;
-
-    public HelloMessageProviderDecorator(HelloMessageProvider helloMessageProvider)
+    internal class HelloMessageProviderDecorator : HelloMessageProvider
     {
-        _helloMessageProvider = helloMessageProvider;
-    }
+        private readonly HelloMessageProvider _helloMessageProvider;
 
-    public override string GetMessage()
-    {
-        return "Hello" + _helloMessageProvider.GetMessage();
+        public HelloMessageProviderDecorator(HelloMessageProvider helloMessageProvider)
+        {
+            _helloMessageProvider = helloMessageProvider;
+        }
+
+        public override string GetMessage()
+        {
+            return "Hello" + _helloMessageProvider.GetMessage();
+        }
     }
 }

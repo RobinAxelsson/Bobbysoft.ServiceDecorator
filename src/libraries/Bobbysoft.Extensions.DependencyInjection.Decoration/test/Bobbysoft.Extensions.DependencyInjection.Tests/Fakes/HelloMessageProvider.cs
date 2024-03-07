@@ -1,9 +1,10 @@
-﻿namespace Bobbysoft.Extensions.DependencyInjection.Tests.Fakes;
-
-internal class HelloMessageProvider : MessageProviderBase
+﻿namespace Bobbysoft.Extensions.DependencyInjection.Tests.Fakes
 {
-    public override string GetMessage()
+    internal class HelloMessageProvider : MessageProviderBase
     {
-        return "Hello";
+        public override string GetMessage()
+        {
+            return "Hello";
+        }
     }
 }

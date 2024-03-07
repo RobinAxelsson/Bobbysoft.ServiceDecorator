@@ -1,7 +1,9 @@
+using System;
+using System.Linq;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Bobbysoft.Extensions.DependencyInjection;
-
+namespace Bobbysoft.Extensions.DependencyInjection
+{
 public static class ServiceDecorator
 {
     public static void Decorate<T>(this IServiceCollection services, Func<T, IServiceProvider, T> implementationFactory)
@@ -163,4 +165,5 @@ public static class ServiceDecorator
     {
         return descriptor.ImplementationType != null;
     }
+}
 }

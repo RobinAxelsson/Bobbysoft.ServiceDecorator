@@ -1,6 +1,7 @@
-﻿namespace Bobbysoft.Extensions.DependencyInjection.Tests.Fakes;
-
-internal interface IMessageProvider
+﻿namespace Bobbysoft.Extensions.DependencyInjection.Tests.Fakes
 {
-    public string GetMessage();
+    internal interface IMessageProvider
+    {
+       string GetMessage();
+    }
 }

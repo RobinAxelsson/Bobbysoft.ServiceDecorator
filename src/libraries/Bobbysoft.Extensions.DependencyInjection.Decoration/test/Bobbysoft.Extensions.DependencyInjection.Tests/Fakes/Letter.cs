@@ -1,11 +1,12 @@
-﻿namespace Bobbysoft.Extensions.DependencyInjection.Tests.Fakes;
-
-internal class Letter
+﻿namespace Bobbysoft.Extensions.DependencyInjection.Tests.Fakes
 {
-    public Letter(HelloMessageProvider messageProvider)
+    internal class Letter
     {
-        Content = messageProvider.GetMessage();
-    }
+        public Letter(HelloMessageProvider messageProvider)
+        {
+            Content = messageProvider.GetMessage();
+        }
 
-    public string Content { get; }
+        public string Content { get; }
+    }
 }

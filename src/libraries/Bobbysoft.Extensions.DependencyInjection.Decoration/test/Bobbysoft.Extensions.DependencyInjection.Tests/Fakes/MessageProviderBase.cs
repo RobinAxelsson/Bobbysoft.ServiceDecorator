@@ -1,6 +1,7 @@
-﻿namespace Bobbysoft.Extensions.DependencyInjection.Tests.Fakes;
-
-internal abstract class MessageProviderBase
+﻿namespace Bobbysoft.Extensions.DependencyInjection.Tests.Fakes
 {
-    public abstract string GetMessage();
+    internal abstract class MessageProviderBase
+    {
+        public abstract string GetMessage();
+    }
 }
