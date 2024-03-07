@@ -10,10 +10,6 @@
   exec { svn info $repository_trunk } "Error executing SVN. Please verify SVN command-line client is installed"
 #>
 
-param(
-    [string]$Framework
-)
-
 function Exec
 {
     [CmdletBinding()]
