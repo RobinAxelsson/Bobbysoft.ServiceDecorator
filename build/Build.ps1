@@ -10,6 +10,10 @@
   exec { svn info $repository_trunk } "Error executing SVN. Please verify SVN command-line client is installed"
 #>
 
+param(
+    [string]$Framework
+)
+
 function Exec
 {
     [CmdletBinding()]
@@ -27,7 +31,7 @@ $artifacts = ".\artifacts"
 if(Test-Path $artifacts) { Remove-Item $artifacts -Force -Recurse }
 
 $slnpath = ".\src\libraries\Bobbysoft.Extensions.DependencyInjection.Decoration\Bobbysoft.Extensions.DependencyInjection.Decoration.sln"
-exec { & dotnet test $slnpath -c Release --results-directory $artifacts -l trx --verbosity=normal }
+exec { & dotnet test $slnpath -c Release --results-directory $artifacts -l trx --verbosity=normal -f $Framework }
 
 $projectpath = ".\src\libraries\Bobbysoft.Extensions.DependencyInjection.Decoration\src\Bobbysoft.Extensions.DependencyInjection.Decoration.csproj"
 exec { & dotnet pack $projectpath -c Release -o $artifacts --no-build }
