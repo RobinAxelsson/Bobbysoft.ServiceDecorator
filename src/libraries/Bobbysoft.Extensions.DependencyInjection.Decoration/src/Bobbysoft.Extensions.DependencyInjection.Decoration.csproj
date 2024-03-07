@@ -7,7 +7,7 @@
     <Authors>RobinSalihAxelsson</Authors>
     <Description>Extends Microsoft.Extensions.DependencyInjection.IServiceCollection to easy
       decorate an already registered service implementation.</Description>
-    <Copyright>Copyright © Robin Salih Axelsson 2023</Copyright>
+    <Copyright>Copyright © Robin Salih Axelsson 2024</Copyright>
     <Summery>Extends Microsoft.Extensions.DependencyInjection.IServiceCollection to easy
       decorate an already registered service implementation.</Summery>
     <NeutralLanguage>en-US</NeutralLanguage>
@@ -30,18 +30,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="package-icon.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Update="README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Update="LICENSE">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
+    <None Include="../package-icon.png" Pack="True" PackagePath=""/>
+    <None Include="../README.md" Pack="True" PackagePath=""/>
+    <None Include="../LICENSE" Pack="True" PackagePath=""/>
   </ItemGroup>
 
 </Project>
