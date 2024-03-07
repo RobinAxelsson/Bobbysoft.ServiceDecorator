@@ -16,8 +16,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: Build and Test
-      run: ./build/Build.ps1
+    - name: Test
+      run: ./build/Test.ps1
+      shell: pwsh
+
+    - name: Pack
+      run: ./build/Pack.ps1
       shell: pwsh
 
     - name: Push to NuGet
