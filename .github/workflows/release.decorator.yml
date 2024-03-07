@@ -11,19 +11,16 @@ jobs:
 
     strategy:
       fail-fast: false
-      matrix:
-        framework: [net6.0, net7.0, net8.0]
 
     steps:
     - name: Checkout
       uses: actions/checkout@v3
 
     - name: Build and Test
-      run: ./build/Build.ps1 -Framework ${{ matrix.framework }}
+      run: ./build/Build.ps1
       shell: pwsh
 
     - name: Push to NuGet
-      if: ${{ github.ref == 'refs/heads/main' }}
       env:
         NUGET_URL: https://api.nuget.org/v3/index.json
         NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
