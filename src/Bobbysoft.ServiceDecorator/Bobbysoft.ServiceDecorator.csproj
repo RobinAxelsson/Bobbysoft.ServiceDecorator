@@ -3,8 +3,9 @@
   <PropertyGroup>
     <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <IsPackable>true</IsPackable>
-    <Version>1.1.3</Version>
+    <Version>1.1.4</Version>
     <Authors>RobinSalihAxelsson</Authors>
+    <PackageId>Bobbysoft.Extensions.DependencyInjection.Decoration</PackageId>
     <Description>Extends Microsoft.Extensions.DependencyInjection.IServiceCollection to easy
       decorate an already registered service implementation.</Description>
     <Copyright>Copyright © Robin Salih Axelsson 2024</Copyright>
