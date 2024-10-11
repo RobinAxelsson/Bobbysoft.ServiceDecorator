@@ -1,9 +1,10 @@
-using Bobbysoft.Extensions.DependencyInjection.Tests.Fakes;
+using Bobbysoft.Extensions.DependencyInjection;
+using Bobbysoft.ServiceDecorator.Tests.Fakes;
 using FluentAssertions;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
-namespace Bobbysoft.Extensions.DependencyInjection.Tests
+namespace Bobbysoft.ServiceDecorator.Tests
 {
     //For more theory see Decorator Design Pattern
     public class ServiceDecoratorTests

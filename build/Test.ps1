@@ -26,5 +26,5 @@ function Exec
 $testResults = ".\test-results"
 if(Test-Path $testResults) { Remove-Item $testResults -Force -Recurse }
 
-$slnpath = ".\src\libraries\Bobbysoft.Extensions.DependencyInjection.Decoration\Bobbysoft.Extensions.DependencyInjection.Decoration.sln"
+$slnpath = ".\Bobbysoft.Extensions.DependencyInjection.Decoration.sln"
 exec { & dotnet test $slnpath -c Release --results-directory $testResults -l trx --verbosity=normal }

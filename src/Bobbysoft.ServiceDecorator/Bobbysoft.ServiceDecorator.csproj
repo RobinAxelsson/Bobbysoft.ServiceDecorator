@@ -14,11 +14,11 @@
     <Title>Bobbysoft.Extensions.DependencyInjection.Decoration</Title>
     <PackageTags>decorator;decoration;decorate;adapter;wrapper;design pattern;microsoft;service provider;servicecollection;inversion of conterol;dependency injection;IOC;container</PackageTags>
     <PackageIcon>package-icon.png</PackageIcon>
-    <PackageProjectUrl>https://github.com/RobinAxelsson/Bobbysoft</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/RobinAxelsson/Bobbysoft.ServiceDecorator</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <RootNamespace>Bobbysoft.Extensions.DependencyInjection</RootNamespace>
-    <RepositoryUrl>https://github.com/RobinAxelsson/Bobbysoft</RepositoryUrl>
+    <RepositoryUrl>https://github.com/RobinAxelsson/Bobbysoft.ServiceDecorator</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryType>git</RepositoryType>
     <IncludeSymbols>False</IncludeSymbols>

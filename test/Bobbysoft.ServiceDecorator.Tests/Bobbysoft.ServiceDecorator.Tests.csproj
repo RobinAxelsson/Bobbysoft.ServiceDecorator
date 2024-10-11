@@ -20,7 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\Bobbysoft.Extensions.DependencyInjection.Decoration.csproj" />
+      <ProjectReference Include="..\..\src\Bobbysoft.ServiceDecorator\Bobbysoft.ServiceDecorator.csproj" />
     </ItemGroup>
 
 </Project>

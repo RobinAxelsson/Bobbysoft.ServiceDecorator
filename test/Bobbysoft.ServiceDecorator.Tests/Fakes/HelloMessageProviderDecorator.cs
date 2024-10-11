@@ -1,4 +1,4 @@
-﻿namespace Bobbysoft.Extensions.DependencyInjection.Tests.Fakes
+﻿namespace Bobbysoft.ServiceDecorator.Tests.Fakes
 {
     internal class HelloMessageProviderDecorator : HelloMessageProvider
     {
