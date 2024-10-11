@@ -26,5 +26,5 @@ function Exec
 $artifacts = ".\artifacts"
 if(Test-Path $artifacts) { Remove-Item $artifacts -Force -Recurse }
 
-$projectpath = ".\src\Bobbysoft.ServiceDecorator\BobbySoft.ServiceDecorator.csproj"
+$projectpath = ".\src\Bobbysoft.ServiceDecorator\Bobbysoft.ServiceDecorator.csproj"
 exec { & dotnet pack $projectpath -c Release -o $artifacts --no-build } "Error executing dotnet pack."
